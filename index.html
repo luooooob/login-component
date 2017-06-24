@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登录组件</title>
+  <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="button"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+      <a href="#" class="title theme-color">登录</a>
+      <a href="#" class="button"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a>
+    </div>
+  </header>
+  <div class="login-component">
+    <div class="container">
+      <form action="\success">
+        <fieldset class="field-tel">
+          <legend class="tiny">手机号</legend>
+          <div class="field-tel-subfield">
+            <select><option value="+86">+86</option></select>
+            <input type="text" id="tel" pattern="^1/d{10}$">
+          </div>
+        </fieldset>
+        <fieldset class="field-code">
+          <input type="text" id="code" placeholder="验证码">
+          <a href="#" id="submit">点击获取验证码</a>
+        </fieldset>
+        <fieldset class="field-password">
+          <input type="text" id="password" placeholder="密码（不少于6位）">
+        </fieldset>
+      </form>    
+    </div>
+  </div>
+  <script src="./js/login.js"></script>
+</body>
+</html>

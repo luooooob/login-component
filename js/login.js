@@ -9,7 +9,7 @@ function submit (e) {
   if (submitButton.getAttribute('disabled')==="disabled") return
   const tel = document.getElementById('tel')
   if (tel.value.match(/^1\d{10}$/g)) {
-    countTime(10)
+    countTime(60)
   } else {
     alert('手机号码错误！')
   }
